@@ -1,0 +1,40 @@
+{
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script",
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "import"],
+  "env": {
+    "es6": true,
+    "commonjs": true,
+    "node": true
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "json": "always"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  }
+}

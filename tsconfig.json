@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+
+    /* Language and Environment */
+    "target": "ES2017",
+
+    /* Modules */
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+
+    /* Emit */
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noEmitOnError": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["lib/**/*.ts", "bin/**/*.ts"],
+  "exclude": ["**/node_modules/**", "dist"]
+}
